@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .avatar {
+        @apply inline-block h-12 w-12 rounded-full ring-2 ring-white;
+    }
+}
