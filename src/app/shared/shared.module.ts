@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { allIcons, HeroIconModule} from 'ng-heroicon';
+import { ShellComponent } from './shell/shell.component';
 
-const components: any[] = [];
+const components:any[] = [
+  ShellComponent
+];
 const modules = [
    CommonModule, 
     HeroIconModule.forRoot({
@@ -19,7 +22,7 @@ const modules = [
     ...modules,
   ],
   exports: [...components,
-   ...modules
+   ...modules,
   ]
 })
 export class SharedModule { }
