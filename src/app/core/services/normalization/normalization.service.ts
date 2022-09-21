@@ -19,7 +19,7 @@ export class NormalizationService {
     );
   }
 
-  restructuredArrayedAttributs(nestedAttribute?: string) :(source$: Observable<StrapiMultiEntryData>) => Observable<any> {
+  restructuredArrayedAttributes(nestedAttribute?: string) :(source$: Observable<StrapiMultiEntryData>) => Observable<any> {
     return source$ => source$.pipe(
       map(v => v.data),
       switchMap(v => v),

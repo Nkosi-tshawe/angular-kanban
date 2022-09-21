@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AuthResponse } from 'src/app/core/models/AuthResponse';
 import { environment } from 'src/environments/environment';
-import { User} from 'src/app/core/models/user';
+import { User} from 'src/app/core/models/User';
 import {HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
 import { StorageService } from 'src/app/core/services/storage/storage.service';
