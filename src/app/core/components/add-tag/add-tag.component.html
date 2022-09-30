@@ -1,0 +1,38 @@
+<div class="bg-white rounded-md p-5 flex flex-col w-[500px] space-y-4 shadow">
+  <div class="flex items-center justify-between">
+    <h3 class="font-medium">New Tag</h3>
+    <button class="p-1 rounded hover:bg-slate-100 text-slate-400">
+      <hero-icon
+        name="x"
+        heroDisplay="inlineBlock"
+        type="outline"
+        class="w-5 h-5"
+      ></hero-icon>
+    </button>
+  </div>
+  <div>
+    <label class="text-slate-400 block font-normal text-sm">Tag name</label>
+    <input
+      type="text"
+      class="input-text w-full"
+      placeholder="Type tag name here..."
+    />
+  </div>
+  <div>
+    <app-color-select></app-color-select>
+  </div>
+  <div class="flex space-between space-x-2">
+    <button
+      class="px-2 py-1 text-blue-800 border border-blue-800 rounded-md flex-1"
+      (click)="close()"
+    >
+      Cancel
+    </button>
+    <button
+      class="p-2 bg-blue-900 hover:bg-blue-700 text-white rounded-md flex-1"
+      (click)="close()"
+    >
+      Save
+    </button>
+  </div>
+</div>

@@ -7,7 +7,7 @@ export class StorageService {
 
   private namespace = "s";
   
-  constructor() { }
+  constructor() {}
 
    getItem(key: string): string | null {
       return window.localStorage.getItem(`${this.namespace}_${key}`);

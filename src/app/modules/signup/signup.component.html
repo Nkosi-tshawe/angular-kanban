@@ -94,7 +94,7 @@
         >
           <p class="text-center text-sm font-medium mx-4 mb-0">OR</p>
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form [formGroup]="signupForm" class="mt-8 space-y-6">
           <div class="shadow-sm">
             <div>
               <label for="full-name" class="block text-sm">Full Name *</label>
@@ -103,6 +103,7 @@
                 name="fullName"
                 type="text"
                 required
+                formControlName="fullName"
                 class="
                   relative
                   block
@@ -133,6 +134,7 @@
                 type="password"
                 autocomplete="current-password"
                 required
+                formControlName="password"
                 class="
                   relative
                   block
@@ -162,6 +164,7 @@
                 name="email"
                 type="email"
                 autocomplete="email"
+                formControlName="email"
                 required
                 class="
                   relative

@@ -6,4 +6,13 @@
     .avatar {
         @apply inline-block h-12 w-12 rounded-full ring-2 ring-white;
     }
+
+    // Overlay backdrop styling
+.overlay-backdrop {
+    @apply bg-slate-700 opacity-25 #{!important};
+  }
+
+  .input-text {
+    @apply rounded-md border border-slate-400 text-sm p-2;
+  }
 }

@@ -94,7 +94,7 @@
         >
           <p class="text-center text-sm font-medium mx-4 mb-0">OR</p>
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form class="mt-8 space-y-6" method="POST" [formGroup]="loginForm">
           <input type="hidden" name="remember" value="true" />
           <div class="-space-y-px rounded-md shadow-sm">
             <div>
@@ -104,6 +104,7 @@
                 name="email"
                 type="email"
                 autocomplete="email"
+                formControlName="identifier"
                 required
                 class="
                   relative
@@ -132,6 +133,7 @@
                 name="password"
                 type="password"
                 autocomplete="current-password"
+                formControlName="password"
                 required
                 class="
                   relative
@@ -157,7 +159,7 @@
 
           <div class="flex items-center justify-between">
             <div class="flex items-center">
-              <input
+              <!-- <input
                 id="remember-me"
                 name="remember-me"
                 type="checkbox"
@@ -172,7 +174,7 @@
               />
               <label for="remember-me" class="ml-2 block text-sm text-slate-900"
                 >Remember me</label
-              >
+              > -->
             </div>
 
             <div class="text-sm">
@@ -184,7 +186,8 @@
 
           <div>
             <button
-              type="submit"
+              type="button"
+              (click)="login()"
               class="
                 group
                 relative

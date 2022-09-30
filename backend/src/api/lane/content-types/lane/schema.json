@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lanes",
+  "info": {
+    "singularName": "lane",
+    "pluralName": "lanes",
+    "displayName": "Lane",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "tasks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::task.task",
+      "mappedBy": "lane"
+    }
+  }
+}
