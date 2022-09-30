@@ -1,0 +1,25 @@
+<div class="bg-white rounded-md p-5 flex flex-col w-[500px] space-y-4 shadow">
+  <h3 class="font-medium">New Lane</h3>
+  <div>
+    <label class="text-slate-400 block font-normal text-sm">Name</label>
+    <input
+      type="text"
+      class="input-text w-full"
+      placeholder="Enter new lane..."
+    />
+  </div>
+  <div class="flex space-between space-x-2">
+    <button
+      class="px-2 py-1 text-blue-800 border border-blue-800 rounded-md flex-1"
+      (click)="close()"
+    >
+      Cancel
+    </button>
+    <button
+      class="p-2 bg-blue-900 hover:bg-blue-700 text-white rounded-md flex-1"
+      (click)="close()"
+    >
+      Save
+    </button>
+  </div>
+</div>
